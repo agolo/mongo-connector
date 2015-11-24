@@ -124,7 +124,8 @@ setup(name='mongo-connector',
       platforms=["any"],
       classifiers=filter(None, classifiers.split("\n")),
       install_requires=['pymongo >= 2.9',
-                        'pysolr >= 3.1.0'],
+                        'pysolr >= 3.1.0',
+                        'raven >= 5.8.1'],
       packages=["mongo_connector", "mongo_connector.doc_managers"],
       package_data={
           'mongo_connector.doc_managers': ['schema.xml']
